@@ -1,0 +1,94 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <style>
+                body{
+                    font-family:calibri ,Helvetica,scans-serif;
+                    background-color:pink;
+                }
+                .container{
+                    padding:50px;
+                    background-color:lightblue;
+                }
+                input[type=text],input[type=password],textarea{
+                    width:100%;
+                    padding:15px;
+                    margin:5px 0 22px 0;
+                    display:inline-block;
+                    border:none;
+                    background:#f1f1f1; 
+                }
+                input[type=text]:focus,input[type=password]:focus{
+                    background-color:orange;
+                    outline:none; 
+                }
+                div{
+                    padding:10px 0;
+                }
+                hr{
+                    border:5px solid #f1f1f1;
+                    margin-bottom:25px;
+                }
+                .registerbtn{
+                    background-color:#4CAF50;
+                    color:white;
+                    padding:16px 20px;
+                    width:100%;
+                    border:none;
+                    margin:8px 0;
+                    cursor:pointer;
+                    opacity:0.9;
+                }
+                .registerbtn:hover{
+                    opacity:1;
+                }
+            </style>
+        </head>
+            <body>
+                <form>
+                    <div  class="container">
+                    <center><h1> Student Registraction From </h1></center>
+                    <hr>
+                    <label><b>FirstName  :</b></label>
+                    <input type="text" name="firstname" placeholder="firstname" size="15" required/><br>
+                    <label><b>MiddleName :</b></label>
+                    <input type="text" name="middlename" placeholder="middlename" size="15" required/><br>
+                    <lable><b>LastName    :</b></lable>
+                    <input type="text" name="lastname" placeholder="lastname" size="15" required/><br>
+                    <div>
+                        <label><b>Couse:</b></label>
+                        <select>
+                            <option value="Course"><b>Course :</b></option>
+                            <option value="BBA">BBA</option>
+                            <option value="MBA">MBA</option>
+                            <option value="B Tech">B Tech</option>
+                            <option value="M Tech">M Tech</option>
+                            <option value="MCA">MCA</option>
+                            <option value="BCA">BCA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label><b>Gender: </b></label><br>
+                            <input  type="radio" value="male" name="gender">Male<br>
+                            <input type="radio" value="female" name="gender">Female<br>
+                            <input type="radio" value="others" name="gender">Other<br>
+                    </div>
+                    <label>Phone:</label>
+                    <input type="text" name="Country code" placeholder="Country code" value="+91" size="2"/>
+                    <input type="text" name="phone" placeholder="phone no" size="10" required/><br>
+                    <b>Current Address:</b>
+                    <br>
+                    <textarea cols="80" rows="5"placeholder="current Address" value="adreess" required >text enter here...</textarea><br>
+                    <label for="email"><b>Email    :</b></label>
+                    <input type="text" placeholder="enter Email" name="email" required><br>
+                    <label for="psw"><b>Password   :</b></label>
+                    <input type="password" placeholder="enter password" name="psw" required><br>
+                    <label for="password-repeat"><b>Password_repeat:</b></label>
+                    <input  type="password" placeholder="re-enter password" name="password-repeat" required><br>
+                    <button type="submit" class="registerbtn"><b>Register</b></button>
+                    </div>
+                    </form>
+                    </body>
+                    </html>
